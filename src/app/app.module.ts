@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PartialsModule } from './layout-component/partials/partials.module';
 import { ComponentModule } from './layout-component/component/component.module';
 import { ApiService } from './service/api.service';
+import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ApiService } from './service/api.service';
     BrowserModule,
     PartialsModule,
     ComponentModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     ApiService

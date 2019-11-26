@@ -3,7 +3,7 @@
     <div class="px-2">
         <form [formGroup]="registerForm" (ngSubmit)="login()" #FormValue="ngForm">
             <div class="form-group">
-                <label for="exampleInputEmail1">Email address {{formValue.email.errors}} --- {{formValue.submitted}}</label>
+                <label for="exampleInputEmail1">Email address</label>
                 <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z.-]+\.[a-zA-Z]{2,3}$" class="form-control" ng formControlName="email" aria-describedby="emailHelp"
                     placeholder="Enter email">
                
