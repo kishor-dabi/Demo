@@ -7,11 +7,14 @@ import { HttpHeaders, HttpClient, HttpResponse } from "@angular/common/http"
 import { map } from "rxjs/operators";
 
 
+import { Observable } from 'rxjs/Observable';
+import "rxjs/Rx"
+
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/observable/throw';
-import "rxjs/Rx"
-import { Observable } from 'rxjs';
+import { share } from 'rxjs/operators';
+
 
 var apiUrl = "http://testwallet.angelium.net/api/"
 
